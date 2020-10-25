@@ -110,7 +110,7 @@ html, body {
 
         grid-template: 
             "head illustration" 60vh
-            "footer footer" 40vh / 2fr 1fr;
+            "footer footer" 30vh / 2fr 1fr;
     }
 
     .landing-section-head span {
