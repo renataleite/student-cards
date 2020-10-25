@@ -1,0 +1,146 @@
+/* Reset */
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+    width: 100vw;
+
+    overflow-x: hidden;
+}
+
+.landing-section {
+    width: 100vw;
+    height: 100vh;
+
+    padding: 3rem 2rem;
+
+    display: grid;
+
+    grid-template: 
+            "head" 40vh
+            "illustration" 35vh
+            "footer" 20vh / 1fr;
+}
+
+.landing-section-head {
+    grid-area: head;
+}
+
+.landing-section-head span {
+    font-size: .8rem;
+    font-weight: 400;
+    opacity: .25;
+}
+
+.landing-section-head h1 {
+    font-size: 2.4rem;
+    font-weight: 900;
+}
+
+.landing-section-head h1 + h1 {
+    margin-bottom: 2rem;
+}
+
+.landing-section-head p {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.landing-section-illustration {
+    grid-area: illustration;
+
+    width: 80vw;
+}
+
+.landing-section-footer {
+    grid-area: footer;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.landing-section-button-repository {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    text-decoration: none;
+    font-weight: 700;
+
+    color: black;
+
+    border-radius: 25px;
+    padding: .75rem 1.5rem;
+
+    transition: background .2s ease-in-out;
+}
+
+.landing-section-button-repository img {
+    margin-right: 1rem;
+}
+
+.landing-section-button-repository:hover {
+    background: #8dc6ff;
+}
+
+.landing-section-icon-scroll {
+    width: 13px;
+
+    animation: rotation 1s infinite ease-in-out;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(180deg);
+    }
+}
+
+.card-section {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (min-width: 600px) {
+    .landing-section {
+        padding: 5rem 6rem;
+
+        grid-template: 
+            "head illustration" 60vh
+            "footer footer" 40vh / 2fr 1fr;
+    }
+
+    .landing-section-head span {
+        font-size: 1rem;
+    }
+
+    .landing-section-head h1 {
+        font-size: 5rem;
+        font-weight: 900;
+    }
+
+    .landing-section-illustration {
+        grid-area: illustration;
+    
+        width: 37.5vw;
+    }
+
+    .landing-section-head p {
+        max-width: 30vw;
+        font-size: 1.2rem;
+    }
+}
