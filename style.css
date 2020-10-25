@@ -87,22 +87,11 @@ html, body {
 }
 
 .landing-section-button-repository:hover {
-    background: #8dc6ff;
+    background: #d3e8ff;
 }
 
 .landing-section-icon-scroll {
     width: 13px;
-
-    animation: rotation 1s infinite ease-in-out;
-}
-
-@keyframes rotation {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(180deg);
-    }
 }
 
 .card-section {
