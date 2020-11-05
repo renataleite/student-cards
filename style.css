@@ -697,6 +697,18 @@ aside.profile_card_andre{
 }
 
 #profile-image {
+  background: url('./assets/images/profile-joaomendonca.jpg');
+  background-repeat: no-repeat;
+  background-size: 125%;
+  background-position-x: center;
+  background-position-y: center;
+  background-clip: padding-box;
+
+  border: 7px solid #22b2de79;
+  border-radius: 100%; 
+   
+  overflow: hidden;
+
   width: 125px;
   height: 125px;
 
@@ -705,9 +717,7 @@ aside.profile_card_andre{
   top: -55px;
   left: calc(50% - 62.5px);
 
-  border: 7px solid #22b2de86;
   box-shadow: 0px 4px 31px 4px rgba(0, 209, 255, 0.25);
-  border-radius: 100%; 
 }
 
 .joaomendonca-card-buttons-wrapper {
