@@ -837,3 +837,110 @@ aside.profile_card_andre{
 }
 
 /* João Mendonça */
+
+/* Ruben Silva */
+
+#divMainRuben i {
+  color: white;
+  width: 100%;
+  height: 100%;
+}
+#divMainRuben{
+  overflow: hidden;
+  background-color: #242424;
+  color: white;
+  font-family:'Roboto', sans-serif;
+  box-shadow: 0px 0px 0.5vw black;
+  width: 38vw;
+  height: 18vw;
+  margin-top:50%;
+  margin: auto;
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+}
+
+/* div que contem a imagem */ 
+#divCardImgRuben{
+width: 35%;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+#profileIconRuben{
+  font-size:10vw;
+  margin-top: 1vw;
+  text-align: center;
+}
+#h2CardimgRuben{
+text-align: center;
+font-size: 1.5vw;
+margin: 0px;
+margin-bottom: 3vw;
+
+}
+#divMainRuben:hover #divCardContentRuben{
+animation-name: cardContentRubenHouver;
+animation-duration: 1s;
+width: 65%;
+opacity: 1;
+}
+@keyframes cardContentRubenHouver {
+  0%{
+      width: 0%;
+      opacity: 0;
+  }
+  90%{opacity: 0;}  
+  100%{
+      width: 65%;
+      opacity: 1;
+  }
+}
+@keyframes cardContentRuben {
+  0%{
+      width: 65%;
+      opacity: 1;   
+  }
+  10%{
+      width: 65%;
+      opacity: 0;}  
+  100%{
+      width: 0%;
+      opacity: 0;
+  }
+}
+
+/* div que contem o texto/conteudo */
+#divCardContentRuben{
+display:flex;
+width: 0%;
+opacity: 0;
+flex-direction: column;
+justify-content:space-between;
+animation-name:cardContentRuben ;
+animation-duration:1s ;
+}
+#h2CardContentRuben{
+margin-bottom:0px;
+margin-top: 1.3vw; 
+font-size: 2vw;
+}
+#pCardContentRuben{
+margin: 0px;
+font-size: 1vw;
+margin-bottom: 3vw;
+margin-right: 1vw;
+}
+#divLinksCardContentRuben{
+width: 50%;
+display: flex;
+margin-bottom: 2vw;    
+font-size: 2vw;
+justify-content:space-between;
+}
+
+
+/* Ruben Silva */
