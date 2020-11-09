@@ -655,14 +655,21 @@ aside.profile_card_andre{
   text-align: center;
 }
 
-.card-section-goncalo .card .details h2{
+.card-section-goncalo .card .details h2, 
+.card-section-goncalo .card .details h2 > a{
   margin: 0;
   padding: 0;
   font-weight: 600;
   font-size: 20px;
   color: #777;
   text-transform: uppercase;
+  text-decoration: none;
+  transition: font-size 200ms ease;
 } 
+
+.card-section-goncalo .card .details h2 > a:hover {
+  font-size: 22px;
+}
 
   .card-section-goncalo .card .details h2 span{
   font-weight: 500;
