@@ -951,5 +951,71 @@ justify-content:space-between;
 /* Ruben Silva */
 
 /*Arthur Luis*/
+.arthur-card{
+    display:none;
+    background-color: white;
+    height: 450px;
+    width: 310px;
+    position: absolute;
+    margin: auto;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+    border-radius: 8px;
+    box-shadow: 0 0 80px 1px rgba(233,144,7,0.8);
+}
+.arthur-info{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.arthur-name{
+    font-size: 35px;
+    font-family: "Raleway",sans-serif;
+    color: #f79f08;
+    position: absolute;
+    letter-spacing: 2px;
+    font-weight: 600;
+    top:100px;
+}
+.arthur-prof{
+    font-size: 25px;
+    position: absolute;
+    top:140px;
+    font-family: "Work Sans",sans-serif;
+    color: #555555;
+}
+.arthur-bio{
+    position: absolute;
+    top:220px;
+    color: #949594;
+    text-align: center;
+    font-size: 18px;
+    font-family: "Work Sans",sans-serif;
+    line-height: 28px;
+}
+.photo{
+    height: 100%;
+    width: 100%;
+    background: url('./assets/images/profile-arthur.jpg');
+    background-repeat:no-repeat;
+    position: absolute;
+    bottom: 0;
+    background-size: 100% 100%;
+    border-radius: 8px;
+    transition: 1s;
+    -webkit-transition: 1s;
+}
+.arthur-card:hover .arthur-photo{
+    transform: scale(0.5,0.35) translateY(-650px);
+    -webkit-transform: scale(0.5,0.35) translateY(-650px);
+    background-size: 100% 150%;
+    background-position: 0 -25px;
+    border-radius: 50%;
+}
 
 /*Arthur Luis*/
