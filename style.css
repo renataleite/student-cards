@@ -951,12 +951,12 @@ justify-content:space-between;
 /* Ruben Silva */
 
 /*Arthur Luis*/
-.arthur-card{
-    display:none;
+.card-section-arthur .card-arthur{
+    display:inline-flexbox;
     background-color: white;
-    height: 450px;
-    width: 310px;
-    position: absolute;
+    height: 500px;
+    width: 400px;
+    position: relative;
     margin: auto;
     top:0;
     bottom: 0;
@@ -972,7 +972,9 @@ justify-content:space-between;
     width: 100%;
     display: flex;
     justify-content: center;
-}
+    margin-left: 5px;
+    margin-right: 5px;
+  }
 .arthur-name{
     font-size: 35px;
     font-family: "Raleway",sans-serif;
@@ -998,10 +1000,10 @@ justify-content:space-between;
     font-family: "Work Sans",sans-serif;
     line-height: 28px;
 }
-.photo{
+.arthur-photo{
     height: 100%;
     width: 100%;
-    background: url('./assets/images/profile-arthur.jpg');
+    background: url('assets/images/profile-arthur.jpg');
     background-repeat:no-repeat;
     position: absolute;
     bottom: 0;
@@ -1010,12 +1012,18 @@ justify-content:space-between;
     transition: 1s;
     -webkit-transition: 1s;
 }
-.arthur-card:hover .arthur-photo{
+.card-arthur:hover .arthur-photo{
     transform: scale(0.5,0.35) translateY(-650px);
     -webkit-transform: scale(0.5,0.35) translateY(-650px);
     background-size: 100% 150%;
     background-position: 0 -25px;
     border-radius: 50%;
 }
-
+.arthur-icons{
+width: 50%;
+display:flex;
+margin-bottom: 5vw;    
+font-size: 5vw;
+justify-content:space-between;
+}
 /*Arthur Luis*/
